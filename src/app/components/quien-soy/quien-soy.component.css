@@ -1,0 +1,4 @@
+.card {
+    --bs-card-border-color:  transparent !important;
+    --bs-card-bg: transparent;
+}
