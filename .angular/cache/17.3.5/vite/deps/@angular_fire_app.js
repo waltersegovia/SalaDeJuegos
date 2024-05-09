@@ -1,19 +1,8 @@
 import {
+  DEFAULT_ENTRY_NAME,
   FirebaseApp,
   FirebaseAppModule,
   FirebaseApps,
-  deleteApp,
-  firebaseApp$,
-  getApp,
-  getApps,
-  initializeApp,
-  onLog,
-  provideFirebaseApp,
-  registerVersion,
-  setLogLevel
-} from "./chunk-QYHR2FNO.js";
-import {
-  DEFAULT_ENTRY_NAME,
   FirebaseError,
   SDK_VERSION,
   _addComponent,
@@ -27,10 +16,18 @@ import {
   _registerComponent,
   _removeServiceInstance,
   _serverApps,
-  initializeServerApp
-} from "./chunk-FI4MMNA7.js";
-import "./chunk-A4IZB6FV.js";
-import "./chunk-F54OP6GS.js";
+  deleteApp,
+  firebaseApp$,
+  getApp2 as getApp,
+  getApps,
+  initializeApp,
+  initializeServerApp,
+  onLog,
+  provideFirebaseApp,
+  registerVersion2 as registerVersion,
+  setLogLevel
+} from "./chunk-7FFBXPMC.js";
+import "./chunk-NLLHEHVU.js";
 export {
   FirebaseApp,
   FirebaseAppModule,

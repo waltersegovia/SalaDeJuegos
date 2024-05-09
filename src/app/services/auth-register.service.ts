@@ -8,8 +8,9 @@
 //   constructor() { }
 // }
 
-import { Injectable } from '@angular/core';
-import { Auth, sendPasswordResetEmail, signInWithEmailAndPassword, User, createUserWithEmailAndPassword, getAuth } from '@angular/fire/auth';
+ import { Injectable } from '@angular/core';
+ import { Auth, sendPasswordResetEmail, signInWithEmailAndPassword, User, createUserWithEmailAndPassword, getAuth } from '@angular/fire/auth';
+
 //import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 @Injectable({

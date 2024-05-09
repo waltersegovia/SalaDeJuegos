@@ -23,7 +23,9 @@ import { AuthRegisterService } from '../../services/auth-register.service';
 export class HomeComponent implements OnInit{
   dataUser: any;
 
-  constructor(private afAuth: AuthRegisterService, private router: Router) {}
+  constructor(private afAuth: AuthRegisterService, private router: Router) {
+    
+  }
 
   ngOnInit(): void {
     this.afAuth
