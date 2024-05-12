@@ -1,0 +1,23 @@
+{
+    "category": "Programming Languages",
+    "items": [
+      "javascript",
+      "python",
+      "java",
+      "csharp",
+      "typescript",
+      "ruby",
+      "swift",
+      "php",
+      "scala",
+      "kotlin",
+      "rust",
+      "perl",
+      "haskell",
+      "go",
+      "lua",
+      "dart",
+      "cobol",
+      "fortran"
+    ]
+  }
