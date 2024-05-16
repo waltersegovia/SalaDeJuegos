@@ -7,6 +7,7 @@ import { FormBuilder, FormGroup, FormsModule, Validators, ReactiveFormsModule } 
 import { addDoc, collection, Firestore } from '@angular/fire/firestore';
 import { AuthRegisterService } from '../../services/auth-register.service';
 import { Router } from '@angular/router';
+import { SpinnerComponent } from '../../shared/spinner/spinner.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
 //import { Component, OnInit } from '@angular/core';
@@ -17,7 +18,7 @@ import { Router } from '@angular/router';
   selector: 'app-login',
   standalone: true,
   // Agregue [ReactiveFormsModule] para activar los foemularios reactivos
-  imports: [ CommonModule, FormsModule, ReactiveFormsModule],//ReactiveFormsModule,
+  imports: [ CommonModule, FormsModule, ReactiveFormsModule,SpinnerComponent],//ReactiveFormsModule,
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -26,6 +27,7 @@ import { Router } from '@angular/router';
 export class LoginComponent  {  //implements OnInit
  
   log : FormGroup;
+  loading: boolean = false;
 
   public loginsCollection:any[] = [];
   public email:string ="";
@@ -65,14 +67,16 @@ export class LoginComponent  {  //implements OnInit
         // const email=this.log.value.email;
         // const password=this.log.value.password;
         const email=this.log.value.email;
+        const fecha= new Date();
         const password=this.log.value.password;
-        console.log(email,password);
+        this.loading = true;
+        console.log(email,fecha);
         
         //  let col = collection(this.fire, 'logins');
         //  addDoc(col, {"email":this.email, "password":this.password})
 
         let col = collection(this.fire, 'logins');
-        addDoc(col, {email,password});
+        addDoc(col, {email,fecha});
        
         // const email=this.logins.value.email;
         // const password=this.logins.value.password;
@@ -86,12 +90,19 @@ export class LoginComponent  {  //implements OnInit
             this.router.navigate(["/home"])
            ))
            .catch((error) => {
-            console.error('Error logueando user:', error);
+            this.loading = false; //console.error(this.loading, error);
            }); 
       
          //console.log(this.registrarUsuario);
          console.log(email,password);
         
+      }
+
+      quickAccess( email:string , password:string ) {
+        this.log.setValue({
+          email: email,
+          password: password
+        });
       }
 
 }

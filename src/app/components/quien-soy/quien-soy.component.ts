@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 @Component({
   selector: 'app-quien-soy',
   standalone: true,
-  imports: [],
+  imports: [NavbarComponent],
   templateUrl: './quien-soy.component.html',
   styleUrl: './quien-soy.component.css'
 })

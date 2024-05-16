@@ -5,8 +5,10 @@ import { VerificarCorreoComponent } from './components/verificar-correo/verifica
 //import { RecuperarPasswordComponent } from './components/recuperar-password/recuperar-password.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+//import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { QuienSoyComponent } from './components/quien-soy/quien-soy.component';
+//import { NavbarComponent } from './shared/navbar/navbar.component';
 
 export const routes: Routes = [
     {path:'', redirectTo: '/login', pathMatch: "full"},
@@ -16,6 +18,8 @@ export const routes: Routes = [
     //{path:'recuperar-password', component: RecuperarPasswordComponent},
     {path:'dashboard', component: DashboardComponent},
     {path:'home', component: HomeComponent},
+    {path:'quien-soy', component: QuienSoyComponent},
+    //{path:'navbar', component: NavbarComponent},
     {path:'**', redirectTo: '/login', pathMatch: "full"}
 ];
 

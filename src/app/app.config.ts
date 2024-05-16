@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
   importProvidersFrom(provideAuth(() => getAuth())), 
   importProvidersFrom(provideFirestore(() => getFirestore()))]
 };
-
+//,imports:{routes}
 // @NgModule({
 //   declarations: [
 //     NgModule
