@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, Validators, ReactiveFormsModule } from '@angular/forms';
 import { addDoc, collection, Firestore } from '@angular/fire/firestore';
 import { AuthRegisterService } from '../../services/auth-register.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { SpinnerComponent } from '../../shared/spinner/spinner.component';
 //import { ReactiveFormsModule } from '@angular/forms';
 
@@ -18,7 +18,7 @@ import { SpinnerComponent } from '../../shared/spinner/spinner.component';
   selector: 'app-login',
   standalone: true,
   // Agregue [ReactiveFormsModule] para activar los foemularios reactivos
-  imports: [ CommonModule, FormsModule, ReactiveFormsModule,SpinnerComponent],//ReactiveFormsModule,
+  imports: [ CommonModule, FormsModule, ReactiveFormsModule,SpinnerComponent,RouterLink],//ReactiveFormsModule,
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
