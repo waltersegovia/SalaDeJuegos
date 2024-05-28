@@ -1,0 +1,60 @@
+<!-- <p>preguntados works!</p> -->
+<section class="preguntados-container">
+
+    @if (user) {
+        <div class="container d-flex flex-column justify-content-center">
+            <h1 class="titulo-preguntados">PREGUNTADOS</h1>
+            <p class="puntuacion">
+                Puntuación: {{ score }}
+                <span class="intentos">(Intentos: {{ attempts }}/10)</span>
+            </p>
+    
+            @if (loadedQuestions) {
+                <div class="row">
+                    <div class="contendor-bandera col">
+                        <img src="{{ currentQuestion.flag }}" alt="bandera" />
+                    </div>
+                    <div class="contenedor-pregunta col">
+                        <h3>¿ De qué país es la bandera ?</h3>
+
+                        @if (gameOver) {
+                            <p class="juego-terminado" [ngClass]="victory ? 'victoria' : 'derrota'" >
+                                {{ gameOverText }}
+                            </p>
+                        }
+                        
+        
+                        @if (activeGame) {
+                            <div>
+
+                                @for (option of currentQuestion.options; track option) {
+                                    <button class="btn-opcion" 
+                                    (click)="play(option, $event)" [ngClass]="correctAnswer ? 'correcta' : ''"
+                                    [ngClass]="wrongAnswer ? 'incorrecta' : ''">
+                                    {{ option }}
+                                </button>
+                                }
+                                
+                            </div>
+                        }
+                        
+        
+                        @if (!activeGame) {
+                            <div >
+                                <button class="btn-reiniciar" (click)="restartGame()">
+                                    Reiniciar Juego
+                                </button>
+                                <button class="btn-reiniciar" [routerLink]="['/home']">
+                                    Volver al Inicio
+                                </button>
+                            </div>
+                        }
+                        
+                    </div>
+                </div>
+            }
+            
+        </div>
+    }
+    
+</section>

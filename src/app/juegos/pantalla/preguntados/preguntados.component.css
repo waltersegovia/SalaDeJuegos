@@ -1,0 +1,158 @@
+.preguntados-container {
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border: 2px solid #00FF00;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  .titulo-preguntados,
+  .contenedor-pregunta > h3 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+  }
+  
+  /* .titulo-preguntados {
+
+  } */
+  
+  .puntuacion {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+  }
+  
+  .intentos {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  .contenedor-pregunta {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .contendor-bandera > img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 8px black;
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+  
+  .juego-terminado {
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 2px 2px 2px rgb(192, 28, 233);
+    font-weight: bold;
+  }
+  
+  .victoria {
+    color: #33ff00;
+  }
+  
+  .derrota {
+    color: #ff0000;
+  }
+  
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  
+  .btn-opcion {
+    width: 25rem;
+    padding: 1.3em 3em;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: #d6ddd6;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .btn-opcion:hover {
+    background-color: #00FF00;
+    box-shadow: 0px 15px 20px #057905;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    transform: translateY(-7px);
+  }
+  
+  .btn-opcion:active {
+    transform: translateY(-2px);
+  }
+  
+  .correcta:hover {
+    background-color: #33ff00;
+    box-shadow: 0px 15px 20px rgba(81, 255, 0, 0.4);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    transform: translateY(-7px);
+  }
+  
+  .incorrecta:hover {
+    background-color: #ff0000;
+    box-shadow: 0px 15px 20px rgba(255, 51, 0, 0.4);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    transform: translateY(-7px);
+  }
+  
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  
+  .btn-reiniciar {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .btn-reiniciar:hover {
+    background-color: #fdfdfd;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+    color: #000;
+    transform: translateY(-7px);
+  }
+  
+  .btn-reiniciar {
+    transform: translateY(-1px);
+  }

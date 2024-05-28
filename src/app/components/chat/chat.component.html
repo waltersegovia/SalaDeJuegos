@@ -1,0 +1,51 @@
+<!-- <p>chat works!</p> -->
+<section class="chat-container">
+    <div class="card text-center contenedor-carta view-from-right">
+      <div class="card-header">CHAT DE USUARIOS</div>
+  
+      <div class="card-body">
+        <div id="contenedor-mensajes" class="contenedor-mensajes">
+          <p
+            *ngFor="let message of messageList"
+            class="p-2 mensajes"
+            [ngClass]="
+              user.uid == message.user.userId
+                ? 'mensaje-enviado'
+                : 'mensaje-recibido'
+            "
+          >
+            <span
+              [ngClass]="
+                user.userId == message.user.userId ? 'email-1' : 'email-2'
+              "
+              >{{ message.user.userName }}</span
+            >
+            <br />
+            {{ message.text }} <br />
+            <span class="fecha">{{ message.date }}</span>
+          </p>
+        </div>
+      </div>
+  
+      <form class="card-footer text-muted input-group" (ngSubmit)="sendMessage()">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Ingrese su mensaje"
+          [(ngModel)]="newMessage"
+          [ngModelOptions]="{ standalone: true }"
+        />
+        <div class="input-group-append" (click)="sendMessage()">
+          <span class="input-group-text btn-enviar" id="basic-addon2">
+            <span class="fa-icon">
+              <img
+                class="imgEnviar"
+                src="../../../assets/img/enviar01.png"
+                alt="sen message"
+                width="20px"
+            /></span>
+          </span>
+        </div>
+      </form>
+    </div>
+  </section>

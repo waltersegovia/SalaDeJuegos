@@ -12,18 +12,20 @@
 // }
 
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { AuthRegisterService } from '../../services/auth-register.service';
 //import { NavbarComponent } from '../../shared/navbar/navbar.component';
 //import { NavbarComponent } from '../../shared/navbar/navbar.component';
 //import { AuthRegisterService } from 'src/app/services/auth-register.service';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
+
 export class HomeComponent implements OnInit{
   dataUser: any;
 

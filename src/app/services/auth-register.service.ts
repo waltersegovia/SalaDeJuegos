@@ -16,6 +16,7 @@
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthRegisterService {
   private user = {
     email: '',

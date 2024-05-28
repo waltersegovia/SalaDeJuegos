@@ -1,0 +1,23 @@
+.background {
+    background: url("../../../../assets/img/hojaFondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+  }
+  .mistakes-count {
+    text-align: center;
+  }
+  
+  .man-bounce {
+    animation: shimmy 1s infinite;
+    animation-direction: alternate;
+  }
+  @keyframes shimmy {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0px, 17px);
+    }
+  }

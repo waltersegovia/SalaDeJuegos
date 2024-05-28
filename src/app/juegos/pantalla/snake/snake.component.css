@@ -1,0 +1,147 @@
+.game-header {
+    color: #fff;
+    padding: 5px 15px 5px 0px;
+    position: relative;
+  }
+  
+  .game-header>.score-block {
+    display: inline-block;
+  }
+  
+  .score-block>.score {
+    position: absolute;
+    right: 8px;
+    top: -5px;
+  }
+  
+  .score-block>.best-score {
+    position: absolute;
+    right: 8px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .game-container {
+    width: 60%;
+    position: relative;
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    border: 2px solid #00FF00;
+    border-radius: 15px;
+  }
+  .card {
+    --bs-card-bg: transparent;
+    color: #fff;
+    font-family: 'Black Ops One', cursive;;
+    .card-header {
+      height: 80px;
+      .logo{
+        font-size: 50px;
+      }
+    }
+  }
+  
+  .row {
+    height: 26px;
+  }
+  
+  .column {
+    border: 1px solid rgba(97, 131, 138, .1);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+  
+  .start-button {
+    padding: 15px;
+    text-align: center;
+  position: relative;
+    background-color: #47565A;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .start-button:hover {
+    opacity: 0.65;
+    cursor: pointer;
+  }
+  
+  .start-button.new-game-button {
+    margin: 0 105px 4px 105px;
+  }
+  
+  .disable-clicks {
+    pointer-events: none;
+  }
+  
+  .new-game-menu {
+    position:fixed;
+    top:-20%;
+    width: 100%;
+    padding: 40% 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+    transition: top 0.3s; 
+  }
+  
+  .new-game-menu-label {
+    font-size: 1.17em;
+    margin-bottom: 13px;
+    display: block;
+    color: #fff;
+  }
+  
+  .new-best-score {
+    animation: glow .5s infinite alternate;
+  }
+  .modal-content {
+    --bs-card-bg: transparent;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    border: 2px solid #00FF00;
+  }
+  
+  
+  @keyframes glow {
+    to {
+      text-shadow: 0 0 15px #ffff00;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .game-container {
+      width: 100%;
+    }
+    .column {
+      width: 5.55%;
+      height: 0;
+      padding-bottom: 5.06%;
+      box-sizing: border-box;
+    }
+    .row {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      height: 0;
+      padding-bottom: 5.5%;
+    }
+    .new-game-menu {
+      width: 100%;
+      top: 8px;
+      padding-top: 30%;
+      font-size: 80%;
+    }
+    .start-button.new-game-button {
+      margin: 0 15% 1% 15%;
+    }
+    @-moz-document url-prefix() {
+      .column {
+        min-height: 5.5vw;
+      }
+    }
+  }

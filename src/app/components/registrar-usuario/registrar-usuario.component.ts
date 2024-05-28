@@ -40,7 +40,7 @@ export class RegistrarUsuarioComponent implements OnInit {
 
     this.authService.registerUser(email,password)
      .then(()=>(
-      this.router.navigate(["/login"])
+      this.router.navigate(["/home"])
      ))
      .catch((error) => {
       console.error('Error registering user:', error);

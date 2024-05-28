@@ -1,0 +1,251 @@
+.mayormenor-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #00FF00;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .titulo-mayormenor {
+    margin-top: 50px;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    color: white;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+   
+  }
+  
+  .puntuacion {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+  }
+  
+  .intentos {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  /* .juego-terminado {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+  } */
+  
+  .row {
+    margin: 1rem auto;
+  }
+  
+  .carta-izquierda {
+    width: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #00FF00;
+  }
+  
+  .carta-derecha {
+    width: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #00FF00;
+  }
+  
+  .btn-mayormenor {
+    display: block;
+    margin: 0.5rem auto;
+    
+  }
+  .btn-mayormenor button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .btn-mayormenor button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse por encima */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+  }
+  
+  @media screen and (max-width: 500px) {
+    .carta-izquierda {
+      width: 9rem;
+    }
+    .carta-derecha {
+      width: 9rem;
+    }
+  }
+  
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  
+  /* From uiverse.io */
+  .btn-menor {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #f3850f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+  }
+  
+  .btn-menor:hover {
+    background-color: #f3850f;
+    box-shadow: 0px 15px 20px rgba(255, 8, 0, 0.4);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    transform: translateY(-7px);
+  }
+  
+  .btn-menor:active {
+    transform: translateY(-2px);
+  }
+  
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  
+  /* From uiverse.io */
+  .btn-mayor {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #1c15ef;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 1rem;
+  }
+  
+  .btn-mayor:hover {
+    background-color: #1c15ef;
+    box-shadow: 0px 15px 20px rgba(3, 15, 184, 0.4);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    transform: translateY(-7px);
+  }
+  
+  .btn-mayor:active {
+    transform: translateY(-2px);
+  }
+  
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  /* ****************************************************************** */
+  
+  /* From uiverse.io */
+  .btn-comenzar-reiniciar {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px #00FF00;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .btn-comenzar-reiniciar:hover {
+    background-color: #6716c4;
+    box-shadow: 0px 15px 20px #00FF00;
+    color: rgb(255, 255, 255);
+    transform: translateY(-7px);
+  }
+  
+  .btn-comenzar-reiniciar {
+    transform: translateY(-1px);
+  }
+  
+  .glow-on-hover {
+    display: block;
+    margin: 1rem auto;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #000
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }

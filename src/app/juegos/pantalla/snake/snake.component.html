@@ -1,0 +1,94 @@
+<!-- <p>snake works!</p> -->
+<div class="card game-container" (keydown)="handleKeyboardEvents($event)" tabindex="0">
+    <div class="card-header container text-center">
+        <div class="row">
+            <div class="col-auto me-auto logo">SERPIENTE</div>
+            <div class="col-auto" style="padding: 8px">
+                <div class="">
+                    <h4 class="score" [ngClass]="{ 'new-best-score': newBestScore }">
+                        Score: {{ score }}
+                    </h4>
+                    <h5 class="best-score" [ngClass]="{ 'new-best-score': newBestScore }">
+                        Best Score: {{ best_score }}
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body text-center">
+
+        <!-- *ngFor="let column of board; let i = index"  ; let index = $index-->
+        @for (column of board; track column; let i = $index) {
+        <div class="row justify-content-md-center">
+            <!-- *ngFor="let row of column; let j = index" -->
+            @for (row of column; track row; let j = $index) {
+            <div class="column" [ngStyle]="{ 'background-color': setColors(i, j) } "></div>
+            }
+        </div>
+        }
+
+
+        <br />
+        <div class="text-center">
+            <div class="row justify-content-evenly mb-3">
+                <div class="col-4">
+                    <button class="btn btn-outline-danger" type="button" [routerLink]="['/home']">
+                        VOLVER AL INICIO
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        INICIA JUEGO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Seleccionar modo
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    style="background-color: #00FF00;"></button>
+            </div>
+
+            <div class="modal-body">
+                <!-- *ngFor="let mode of getKeys(all_modes)" -->
+                @for (mode of getKeys(all_modes); track mode) {
+                <div class="start-button new-game-button" (click)="newGame(mode)" data-bs-dismiss="modal" aria-label="Close">
+                    {{ all_modes[mode] }}
+                </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ******************************************************************** -->
+
+<!-- <div class="start-button new-game-button" (click)="newGame(mode)" *ngFor="let mode of getKeys(all_modes)" data-bs-dismiss="modal" aria-label="Close">
+          {{ all_modes[mode] }}
+</div> -->
+
+<!-- ******************************************************************** -->
+<!-- <div class="game-header">
+    <h3 class="logo">SERPIENTE</h3>
+    <div class="score-block">
+      <h1 class="score" [ngClass]="{'new-best-score': newBestScore}">Score: {{score}}</h1>
+      <h2 class="best-score" [ngClass]="{'new-best-score': newBestScore}">Best Score: {{best_score}}</h2>
+    </div>
+  </div> -->
+
+<!-- <div style="margin-left: 40px;" class="row" *ngFor="let column of board; let i = index;">
+    <div class="column" [ngStyle]="{'background-color': setColors(i, j)}" *ngFor="let row of column; let j = index"></div>
+  </div>
+  <div class="start-button" [ngClass]="{'disable-clicks': gameStarted}" (click)="showMenu()">Start Game</div>
+  <div class="new-game-menu" *ngIf="showMenuChecker">
+    <span class="new-game-menu-label">Select Mode</span>
+    <div class="start-button new-game-button" (click)="newGame(mode)" *ngFor="let mode of getKeys(all_modes)">{{all_modes[mode]}}</div>
+  </div> -->

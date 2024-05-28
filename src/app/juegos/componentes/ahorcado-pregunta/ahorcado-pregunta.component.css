@@ -1,0 +1,17 @@
+.characters {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 30px auto;
+  
+    .character {
+      padding-bottom: 8px;
+      border-bottom: 1px solid #b9b9b9;
+      min-width: 20px;
+      min-height: 20px;
+      text-align: center;
+      color: aliceblue;
+     
+    }
+  }
+  

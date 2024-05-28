@@ -1,0 +1,14 @@
+<!-- <p>ahorcado-keyboard works!</p> -->
+
+<div class="keyboard">
+    <div class="keys">
+        @for(key of keys; track keys){
+            <div (click)="onKeyClick(key)" class="key btn"  [class.btn--disabled]="key.guessed">
+                <div class="key-char">
+                    {{key.value}}
+                </div>
+            </div>
+        }
+        
+    </div>
+</div>

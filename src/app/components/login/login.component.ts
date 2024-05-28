@@ -28,6 +28,8 @@ export class LoginComponent  {  //implements OnInit
  
   log : FormGroup;
   loading: boolean = false;
+  //passwordValue: boolean = true;
+  UserValue: boolean = false;
 
   public loginsCollection:any[] = [];
   public email:string ="";
@@ -53,6 +55,10 @@ export class LoginComponent  {  //implements OnInit
          password: ['', Validators.required],    
          })
 
+         this.log = this.fb.group({
+          email: ['', [Validators.required, Validators.email]],
+          password: ['', [Validators.required, Validators.minLength(6)]],
+        });
     // onSubmit(): void {
     //   const formData = this.logins.value;
     //   this.fire.loginUser;
@@ -97,6 +103,20 @@ export class LoginComponent  {  //implements OnInit
          console.log(email,password);
         
       }
+
+      // passwordError(){
+      //   const email=this.log.value.email;
+      //   const password=this.log.value.password;
+      //   this.passwordValue = true;
+      //   this.authLogin.loginUser(email,password)
+      //   .then(()=>(
+      //    this.router.navigate(["/home"])
+      //   ))
+      //   .catch((error) => {
+      //    this.passwordValue = false; //console.error(this.loading, error);
+      //   }); 
+      // }
+
 
       quickAccess( email:string , password:string ) {
         this.log.setValue({

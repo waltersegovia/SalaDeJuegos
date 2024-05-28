@@ -1,1 +1,78 @@
-<p>ahorcado works!</p>
+<!-- <p>ahorcado works!</p> -->
+<div style="margin-top: 50px; font-family: 'Black Ops One', cursive">
+    <div class="container text-center">
+        <h1 style="color: aliceblue">AHORCADO</h1>
+        <div class="row justify-content-start">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <app-ahorcado-dibujar (gameFinished)="onGameFinished($event.mistakesRemaining, $event.success)"
+                        [guesses]="guesses" [question]="question"></app-ahorcado-dibujar>
+                </div>
+
+                <div class="col-4">
+                    <!-- <ng-container *ngIf="!restartGameBtnShown; else restartGameBtn">
+                        <app-ahorcado-pregunta class="margin" [guesses]="guesses"
+                            [question]="question"></app-ahorcado-pregunta>
+
+                        <app-ahorcado-keyboard (keyPressed)="guess($event)"
+                            [question]="question"></app-ahorcado-keyboard>
+                    </ng-container>
+
+                    <ng-template #restartGameBtn>
+                        <div style="color: white;">
+                            <hr />
+                            <h3 style="color: white;">Perdiste</h3>
+                            <hr />
+                            <div class="d-inline-block w-50">
+                                <button type="button" class="btn btn-danger btn-block" routerLink="['/home']">
+                                    Volver al inicio
+                                </button>
+                            </div>
+                            <div class="d-inline-block w-50">
+                                <button type="button" class="btn btn-success btn-block" (click)="reset()">
+                                    Reiniciar el Juego
+                                </button>
+                            </div>
+                        </div>
+                    </ng-template> -->
+
+                    @if(!restartGameBtnShown){
+                        <ng-container>
+                            <app-ahorcado-pregunta class="margin" [guesses]="guesses"
+                                [question]="question"></app-ahorcado-pregunta>
+    
+                            <app-ahorcado-keyboard (keyPressed)="guess($event)"
+                                [question]="question"></app-ahorcado-keyboard> 
+                        </ng-container>
+                    }
+                    
+                    @else{
+                        <!-- <ng-template > -->
+                            <div style="color: white;">
+                                <hr />
+                                <h3 style="color: white;">Perdiste</h3>
+                                <hr />
+                                <div class="d-inline-block w-50">
+                                    <button type="button" class="btn btn-danger btn-block" [routerLink]="['/home']">
+                                        Volver al inicio
+                                    </button>
+                                </div>
+                                <div class="d-inline-block w-50">
+                                    <button type="button" class="btn btn-success btn-block" (click)="reset()">
+                                        Reiniciar el Juego
+                                    </button>
+                                </div>
+                            </div>
+                        <!-- </ng-template> -->
+                    }
+
+                    
+                    
+                       
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
