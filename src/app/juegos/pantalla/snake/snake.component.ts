@@ -14,13 +14,13 @@ import { Component } from '@angular/core';
 import { Snake } from '../game-engine/snake';
 import { Food } from '../game-engine/food';
 import {  AppStorageService as BestScoreManager } from '../../../services/app.storage.service';
-//import { CONTROLS, COLORS, BOARD_SIZE, GAME_MODES} from './app.constants';
+import { CONTROLS, COLORS, BOARD_SIZE, GAME_MODES} from './app.constants';
 import { AuthRegisterService } from '../../../services/auth-register.service'; 
 import { LogService } from '../../../services/log.service'; 
 //import { serverTimestamp } from '@angular/fire/firestore';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { BOARD_SIZE, COLORS, CONTROLS, GAME_MODES } from './app.constants';
+//import { BOARD_SIZE, COLORS, CONTROLS, GAME_MODES } from './app.constants';
 import { serverTimestamp } from 'firebase/firestore';
 
 @Component({
@@ -275,6 +275,7 @@ export class SnakeComponent {
   }
 
   newGame(mode: string): void {
+    console.log("Entro"+ mode);
     this.default_mode = mode || 'classic';
     this.showMenuChecker = false;
     this.newBestScore = false;

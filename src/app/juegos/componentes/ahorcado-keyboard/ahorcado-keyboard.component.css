@@ -13,7 +13,7 @@
     min-width: 36px;
     min-height: 36px;
     background-color: rgb(170, 2, 170);
-    color: #fff;
+    color: #fff;/*#fff*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +26,6 @@
   }
   
   .btn--disabled {
-    background-color: #dcdcdc;
+    background-color: #dcdcdc;/*#dcdcdc*/
     cursor: default;
   }

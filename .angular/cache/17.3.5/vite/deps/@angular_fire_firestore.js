@@ -1,6 +1,6 @@
 import {
   AuthInstances
-} from "./chunk-DFOOOX5R.js";
+} from "./chunk-FEQONQU3.js";
 import {
   FirebaseApp,
   FirebaseApps,
@@ -10,29 +10,7 @@ import {
   ɵgetAllInstancesOf,
   ɵgetDefaultInstanceOf,
   ɵzoneWrap
-} from "./chunk-CKZZRHR6.js";
-import {
-  InjectionToken,
-  Injector,
-  NgModule,
-  NgZone,
-  Observable,
-  Optional,
-  concatMap,
-  distinct,
-  distinctUntilChanged,
-  filter,
-  from,
-  map,
-  pairwise,
-  pipe,
-  scan,
-  setClassMetadata,
-  startWith,
-  timer,
-  ɵɵdefineInjector,
-  ɵɵdefineNgModule
-} from "./chunk-SGDSN2FS.js";
+} from "./chunk-XLEXFB7U.js";
 import "./chunk-H4VKPN7N.js";
 import {
   AbstractUserDataWriter,
@@ -146,11 +124,33 @@ import {
   we,
   where,
   writeBatch
-} from "./chunk-ZVA6QP2S.js";
+} from "./chunk-GZIE6QP3.js";
 import {
   registerVersion
-} from "./chunk-R5SOW6U4.js";
-import "./chunk-LJ4VCL4A.js";
+} from "./chunk-46Q3ZOQK.js";
+import {
+  InjectionToken,
+  Injector,
+  NgModule,
+  NgZone,
+  Observable,
+  Optional,
+  concatMap,
+  distinct,
+  distinctUntilChanged,
+  filter,
+  from,
+  map,
+  pairwise,
+  pipe,
+  scan,
+  setClassMetadata,
+  startWith,
+  timer,
+  ɵɵdefineInjector,
+  ɵɵdefineNgModule
+} from "./chunk-NGZ24YUA.js";
+import "./chunk-LC3XPD6X.js";
 
 // node_modules/rxfire/firestore/index.esm.js
 var __assign = function() {

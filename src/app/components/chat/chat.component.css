@@ -12,7 +12,7 @@
   .card-body {
     padding: 0.5rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../../../../assets/chatjuego.jpg");
+      url("../../../assets/img/chatjuego.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 16px #03b103;

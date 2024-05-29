@@ -29,9 +29,9 @@
                 <input type="password" class="form-control" formControlName="password" placeholder="Password">
                 <label>Password</label>
 
-                <span *ngIf="!loading && log.get('password')?.touched " class="text-danger">
+                <!-- <span *ngIf="!loading && log.get('password')?.touched " class="text-danger">
                     La <strong>contraseña</strong> es incorrecta
-                </span>
+                </span> -->
 
                 <span *ngIf=" log.get('password')?.hasError('required') && log.get('password')?.touched " class="text-danger">
                     La <strong>contraseña</strong> es requerida

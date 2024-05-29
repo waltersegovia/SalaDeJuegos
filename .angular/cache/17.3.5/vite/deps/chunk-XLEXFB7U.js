@@ -1,4 +1,13 @@
 import {
+  deleteApp,
+  getApp,
+  getApps,
+  initializeApp,
+  onLog,
+  registerVersion,
+  setLogLevel
+} from "./chunk-46Q3ZOQK.js";
+import {
   Inject,
   Injectable,
   InjectionToken,
@@ -24,16 +33,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-SGDSN2FS.js";
-import {
-  deleteApp,
-  getApp,
-  getApps,
-  initializeApp,
-  onLog,
-  registerVersion,
-  setLogLevel
-} from "./chunk-R5SOW6U4.js";
+} from "./chunk-NGZ24YUA.js";
 
 // node_modules/firebase/app/dist/esm/index.esm.js
 var name = "firebase";
@@ -361,4 +361,4 @@ firebase/app/dist/esm/index.esm.js:
    * limitations under the License.
    *)
 */
-//# sourceMappingURL=chunk-CKZZRHR6.js.map
+//# sourceMappingURL=chunk-XLEXFB7U.js.map

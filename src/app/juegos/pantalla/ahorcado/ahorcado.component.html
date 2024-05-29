@@ -37,13 +37,13 @@
                     </ng-template> -->
 
                     @if(!restartGameBtnShown){
-                        <ng-container>
+                        <!-- <ng-container> -->
                             <app-ahorcado-pregunta class="margin" [guesses]="guesses"
                                 [question]="question"></app-ahorcado-pregunta>
     
                             <app-ahorcado-keyboard (keyPressed)="guess($event)"
                                 [question]="question"></app-ahorcado-keyboard> 
-                        </ng-container>
+                        <!-- </ng-container> -->
                     }
                     
                     @else{

@@ -16,11 +16,11 @@ import {
   isIndexedDBAvailable,
   isSafari,
   registerVersion
-} from "./chunk-R5SOW6U4.js";
+} from "./chunk-46Q3ZOQK.js";
 import {
   __async,
   __superGet
-} from "./chunk-LJ4VCL4A.js";
+} from "./chunk-LC3XPD6X.js";
 
 // node_modules/@firebase/webchannel-wrapper/dist/esm/index.esm2017.js
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
@@ -18744,4 +18744,4 @@ export {
    * limitations under the License.
    *)
 */
-//# sourceMappingURL=chunk-ZVA6QP2S.js.map
+//# sourceMappingURL=chunk-GZIE6QP3.js.map
